@@ -22,6 +22,20 @@ function SUBMIT(){
   }else {
     date.setMonth(Month);
   }
+  if (Year <0){
+    baseline.getInfoClassName("invalid year").innerHtml="Enter valid Year";
+    return false;
+  }else if (Year==="") {
+    baseline.getInfoClassName("inalid year").innerHtml="insert field";
+    return false;
+  }else {
+    date.setYear(Year);
+  }
+   var Day=date.getDay();
+   var Days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+   var Male=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+   var Female=["Akosua","Adwoa"," Abenaa","Akua","Yaa","Afua","Ama"];
+   
 
 
 
