@@ -39,7 +39,7 @@ function SUBMIT(){
    function getAkan(){
      var ismale=baseline.getInfoId("Male").checked;
      var isfemale=baseline.getInfoId("Female").checked;
-     if (ismale ===true && isfemale ==false){
+     if (ismale ===true && isfemale===false){
        if (day ===0){
          alert("your name is" + Male[0]);
        }
@@ -58,7 +58,7 @@ function SUBMIT(){
        else if (Day===5) {
          alert("your name is" + Male[5]);
        }
-       else if (Day==6){
+       else if (Day===6){
          alert("your name is" + Male[6]);
        }
      }
@@ -81,7 +81,7 @@ function SUBMIT(){
        else if (Day===5) {
          alert("your name is" + Female[5]);
        }
-       else if (Day==6){
+       else if (Day===6){
          alert("your name is" + Female[6]);
        }
      }
