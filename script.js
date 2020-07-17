@@ -13,4 +13,16 @@ function SUBMIT(){
   }else {
     date.setDate(date);
   }
+  if (Month<0 || day> 31){
+    baseline.getInfoClassName("invalid month").innerHtml="Enter a valid Month";
+    return false;
+  }else if (Month ==="") {
+    baseline.getInfoClassName("invalid month").innerHtml="insert field";
+    return false;
+  }else {
+    date.setMonth(Month);
+  }
+
+
+
 }
