@@ -62,9 +62,28 @@ function SUBMIT(){
          alert("your name is" + Male[6]);
        }
      }
-
+     if (isfemale ===true && ismale===false){
+       if (day ===0){
+         alert("your name is" + Female[0]);
+       }
+       else if (Day===1) {
+         alert("your name is" + Female[1]);
+       }
+       else if (Day===2) {
+         alert("your name is"+ Female[2]);
+       }
+       else if (Day===3) {
+         alert("your name is" +Female[3]);
+       }
+       else if (Day===4) {
+         alert("your name is"+ Female[4]);
+       }
+       else if (Day===5) {
+         alert("your name is" + Female[5]);
+       }
+       else if (Day==6){
+         alert("your name is" + Female[6]);
+       }
+     }
    }
-
-
-
 }
