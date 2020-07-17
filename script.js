@@ -35,7 +35,35 @@ function SUBMIT(){
    var Days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
    var Male=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
    var Female=["Akosua","Adwoa"," Abenaa","Akua","Yaa","Afua","Ama"];
-   
+
+   function getAkan(){
+     var ismale=baseline.getInfoId("Male").checked;
+     var isfemale=baseline.getInfoId("Female").checked;
+     if (ismale ===true && isfemale ==false){
+       if (day ===0){
+         alert("your name is" + Male[0]);
+       }
+       else if (Day===1) {
+         alert("your name is" + Male[1]);
+       }
+       else if (Day===2) {
+         alert("your name is"+ Male[2]);
+       }
+       else if (Day===3) {
+         alert("your name is" + Male[3]);
+       }
+       else if (Day===4) {
+         alert("your name is"+ Male[4]);
+       }
+       else if (Day===5) {
+         alert("your name is" + Male[5]);
+       }
+       else if (Day==6){
+         alert("your name is" + Male[6]);
+       }
+     }
+
+   }
 
 
 
