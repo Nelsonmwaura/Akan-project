@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>AKAN NAME GENERATOR</title>
   <link rel="stylesheet" href="/home/mwaura/Documents/WEEK2/Akan-project/styles.css" type="text/css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="/home/mwaura/Documents/WEEK2/Akan-project/script.js"></script>
+  <script src="/home/mwaura/Documents/WEEK2/Akhan-name/Akhan-name-generator/js/script.js"></script>
 </head>
 
 <body>
@@ -29,6 +28,18 @@
         <li>Friday: Kofi</li>
         <li>Saturday: Kwame</li>
       </ol>
+      <br>You can find a name for your child by filling the form below then submit.</br>
+      <form id="form" method="POST">
+          Date:<input type="number" id="date">
+          Month:<input type="number" id="month">
+          Year:<input type="number" id="year">
+          <select id="gender">
+            <option value="female">Female</option>`
+            <option value="male">Male</option>
+          </select>
+        <input type="submit" value="Submit" id="submitButton" class="btn btn-secondary" onclick="getAkan();  SUBMIT(); return false"/>
+        <h2 class ="text-center" id="result"></h2>
+      </form>
       <h4><u>FEMALE CHILD</u></h4>
       <ol>
         <li>Sunday: Akosua</li>
@@ -39,28 +50,7 @@
         <li>Friday: Afua</li>
         <li>Saturday: Ama</li>
       </ol>
-      <br>You can find a name for your child by filling the form below then submit.</br>
-      <form>
-        <h2 class="">Enter Date of Birth:</h2>
-        <input type="text" id="Day" class="form" placeholder="Day">
-        <p id="invalid day"></p>
-        <h2 class="">Enter Date of Month:</h2>
-        <input type="text" id="Month" class="form" placeholder="Month">
-        <p id="invalid month"></p>
-        <h2 class="">Enter Year:</h2>
-        <input type="text" id="Year" class="form" placeholder="Year">
-        <p id="invalid year"></p>
-        <h3>Select your Gender:</h3>
-        <label for="male">MALE:</label>
-        <input type="checkbox" id="Male" class="select">
-        <label for="female">FEMALE:</label>
-        <input type="checkbox" id="Female" class="select">
-        <br>
-        <p>
-          please select one!
-        </p>
-        </br>
-        <button type="button" onclick="fn()" class="btn-medium btn-block btn-outline-secondary"> Akan Name
+
     </div>
   </div>
 </body>
