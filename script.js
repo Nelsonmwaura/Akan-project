@@ -30,7 +30,10 @@ function SUBMIT() {
   } else {
     date.setYear(year);
   }
-  var day = d.getDay();
+
+  var genders = document.getElementById("gender");
+  var gender = genders.options[genders.selectedIndex].text;
+
   var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var female = ["Akosua", "Adwoa", " Abenaa", "Akua", "Yaa", "Afua", "Ama"];
