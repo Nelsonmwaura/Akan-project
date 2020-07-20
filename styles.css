@@ -1,13 +1,21 @@
-h1{
-  color: #78030E ;
+.border {
+  border-radius: 30px;
+  background-color: #17a2b8;
+}
+
+h1 {
+  color: #78030E;
   text-align: center;
 }
-h2{
-  color: #10E37F ;
+
+h2 {
+  color: #10E37F;
 }
-h4{
-  color: #07DEE3 ;
+
+h4 {
+  color: #07DEE3;
 }
-body{
-  background-color: #DAF7A6  ;
+
+body {
+  background-color: #DAF7A6;
 }
