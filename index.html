@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>AKAN NAME GENERATOR</title>
-  <link rel="stylesheet" href="/home/mwaura/Documents/WEEK2/Akan-project/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="/home/mwaura/Documents/WEEK2/Akan-project/styles.css" type="text/css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="/home/mwaura/Documents/WEEK2/Akan-project/script.js"></script>
+  <title>AKAN NAME GENERATOR</title>
+  <link rel="stylesheet" href="bootstrap.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
   <div class="container">
-    <div class="border">
-      <h1> AKAN NAME GENERATOR</h1>
-      <p> This website sole purpose is to provide naming service to children born
+    <div class=" text-center" id="header">
+      <h1>AKAN NAME GENERATOR</h1>
+      <p>This website sole purpose is to provide naming service to children born
         It very simple to use ,meaning that you should put the child's birthday and it will
-        the day of the week the child was born, depending on their gender if they are male or female.
-      </p>
+        the day of the week the child was born, depending on their gender if they are male or female.</p>
     </div>
     <h4><u>MALE CHILD</u></h4>
     <ol>
@@ -30,14 +31,16 @@
     </ol>
     <br>You can find a name for your child by filling the form below then submit.</br>
     <form id="form" method="GET">
+      <legend>Fill in your details</legend>
       Date:<input type="number" id="date">
       Month:<input type="number" id="month">
       Year:<input type="number" id="year">
       <select id="gender">
-        <option value="female">Female</option>`
+        <option value="female">Female</option>
         <option value="male">Male</option>
       </select>
-      <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="getAkanName(); SUBMIT(); return false"/>
+      <input type="submit" value="Submit" id="submitButton" class="btn btn-primary"
+        onclick="getAkanName(); SUBMIT(); return false" />
       <h2 class="text-center" id="result"></h2>
     </form>
     <h4><u>FEMALE CHILD</u></h4>
@@ -50,9 +53,10 @@
       <li>Friday: Afua</li>
       <li>Saturday: Ama</li>
     </ol>
-  </div>
 </body>
+<script src="script.js"></script>
 <footer class="text-center">
   Copyright &copy; 2019 designed by Mwaura.
 </footer>
+
 </html>
